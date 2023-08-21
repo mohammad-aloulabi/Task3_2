@@ -1,0 +1,388 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ------------------------Nav--------------------------- */
+
+nav {
+    width: 100vw;
+    height: 65px;
+    background-color: #4443439c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    position: fixed;
+    flex-wrap: wrap;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+}
+
+a:hover {
+    color: rgb(66, 101, 240);
+}
+
+
+/* -------------------------Hero-------------------------- */
+
+.hero {
+    background: url(.././assets/img/main.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: cwnter;
+}
+
+.hero h1 {
+    background-color: rgba(92, 90, 90, 0.399);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media screen and (max-width:600) {
+    .hero h1 {
+        font-size: 10px;
+    }
+}
+
+
+/* --------------------------About Us------------------------- */
+
+#about_us {
+
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    padding: 30px 0;
+    margin: auto;
+
+}
+
+#about_us p {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* ------------------------our_services--------------------------- */
+
+#our_services {
+    padding: 30px 0;
+    background-color: rgb(213, 211, 211);
+}
+
+#our_services h2 {
+    width: max-content;
+    margin: auto;
+}
+
+#our_services .container1 {
+    max-width: 1100px;
+    margin: 30px auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+
+}
+
+#our_services .container1 .card {
+    width: 350px;
+    height: 200px;
+    background-color: #a7c3f0;
+    border: 2px solid #79a6ef;
+    border-radius: 20px;
+    padding: 10px;
+    padding-top: 20px;
+    line-height: 1.8em;
+}
+
+#our_services .card :hover {
+    background-color: white;
+    border-radius: 10px;
+    transition: 1s all 1s;
+
+}
+
+
+/* -------------------------Specialization-------------------------- */
+
+
+
+#Specialization {
+    /* width: 100%; */
+    padding: 30px 0;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.column2 {
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.column2 div {
+    background-color: rgb(213, 211, 211);
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 0 20px;
+    margin-bottom: 20px;
+}
+
+.column2 div h3 {
+    padding-bottom: 40px;
+}
+
+
+@media(max-width : 992px) {
+    .column2 {
+        width: min-content;
+    }
+}
+
+
+/* --------------------------our_teacher------------------------- */
+
+#our_teacher {
+    /* width: 100%; */
+    height: max-content;
+    padding: 30px 0;
+    background-color: rgb(213, 211, 211);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.column3 {
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.column3 div {
+    background-color: white;
+    width: 300px;
+    height: 320px;
+    padding: 20px;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.column3 h3 {
+    padding-bottom: 20px;
+    color: #8eb8fb;
+}
+
+#our_teacher .column3 img {
+    width: 100px;
+    height: 75px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+@media(max-width : 992px) {
+    .column3 {
+        width: min-content;
+    }
+}
+
+/* ------------------------plan --------------------------- */
+
+#plan {
+    width: 100%;
+    height: max-content;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.img_plan {
+    width: 300px;
+    height: 175px;
+    border-radius: 5px;
+}
+
+.box {
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.box_child {
+
+    background-color: #a1c4fd;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 10px;
+}
+
+.price {
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(213, 211, 211);
+    border: 2px solid rgb(158, 156, 156);
+    border-radius: 5px;
+}
+
+.box_child ul {
+    padding-left: 20px;
+}
+
+.box_child li {
+    color: black;
+}
+
+.box_child h3 {
+    text-align: center;
+}
+
+/* ------------------------contact_us--------------------------- */
+
+#contact_us {
+    width: 100%;
+    height: max-content;
+    padding-top: 40px;
+    background-color: rgb(213, 211, 211);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+#contact_us form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+}
+
+input,
+textarea {
+    width: 500px;
+    height: 50px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+.btn {
+    background-color: #a1c4fd;
+    color: black;
+    border-radius: 5px;
+    width: max-content;
+    padding: 0 15px;
+    margin: auto;
+    margin-top: 20px;
+    font-size: large;
+}
+
+.btn:hover {
+    background-color: gray;
+    border: 1px solid rgb(82, 80, 80);
+    color: rgb(36, 36, 164);
+}
+
+@media(max-width : 600px) {
+
+    input,
+    textarea {
+        width: 300px;
+    }
+}
+
+/* ------------------------footer--------------------------- */
+
+footer {
+    background-color: rgb(213, 211, 211);
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 50px;
+
+
+}
+
+.div-v {
+    width: 100%;
+    height: 65px;
+    background-color: #4443439c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h2 {
+    padding-bottom: 20px;
+}
+
+
+
+
+/* ------------------------custom--------------------------- */
+
+
+h2 {
+    font-size: 30px;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
